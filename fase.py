@@ -109,7 +109,7 @@ class Fase():
         """
         for passaro in self._passaros:
             passaro.calcular_posicao(tempo)
-            for alvo in self._obstaculos+self._porcos:
+            for alvo in self._obstaculos + self._porcos:
                 passaro.colidir(alvo, self.intervalo_de_colisao)
             passaro.colidir_com_chao()
 
@@ -124,10 +124,10 @@ class Fase():
         for porco in self._porcos:
             if porco.status == ATIVO:
                 return True
-            return False
+        return False
 
     def _possui_passaros_ativos(self):
         for passaro in self._passaros:
             if passaro.status == ATIVO:
                 return True
-            return False
+        return False
