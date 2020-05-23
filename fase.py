@@ -71,9 +71,9 @@ class Fase():
         Se o jogo acabou com derrota (ainda existe porco ativo), retorna essa mensagem
 
         Se o jogo acabou com vitória (não existe porco ativo), retorna essa mensagem
-
         :return:
         """
+
         if not self._possui_porco_ativo():
             return VITORIA
         elif self._possui_passaros_ativos():
